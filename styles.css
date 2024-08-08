@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0000ff; /* নীল ব্যাকগ্রাউন্ড */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.eye-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.r-n-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+
+.profile-section, .login-section {
+    display: none;
+    text-align: left;
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.profile-section button, .login-section button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login-section input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card.flipped, .card.matched {
+    background-color: #fff;
+    color: #000;
+}
+
+#reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
